@@ -191,8 +191,8 @@
             showConfirmButton: false,
             timer: 3000,
             timerProgressBar: true,
-            background: '#1e293b',
-            color: '#fff',
+            background: '#0f0f0f',
+            color: '#fceabb',
             didOpen: (toast) => {
                 toast.addEventListener('mouseenter', Swal.stopTimer)
                 toast.addEventListener('mouseleave', Swal.resumeTimer)
@@ -269,10 +269,10 @@
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#ef4444',
-                cancelButtonColor: '#64748b',
+                cancelButtonColor: '#333333',
                 confirmButtonText: 'Yes, delete it!',
-                background: '#1e293b',
-                color: '#fff'
+                background: '#0f0f0f',
+                color: '#fceabb'
             }).then((result) => {
                 if (result.isConfirmed) {
                     $.ajax({
